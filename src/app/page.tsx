@@ -2,10 +2,11 @@
 "use client";
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import Mempelai from "../components/mempelai";
-import Acara from "../components/Acara";
-import HitungMundur from "../components/Countdown";
-import MusicPlayer from "../components/MusicPlayer";
+// Jalur import yang baru di dalam src/app/page.tsx
+import Mempelai from "../components/Template1/mempelai";
+import Acara from "../components/Template1/Acara";
+import HitungMundur from "../components/Template1/Countdown";
+import MusicPlayer from "../components/Template1/MusicPlayer";
 
 function UndanganContent() {
   const searchParams = useSearchParams();
@@ -75,5 +76,3 @@ export default function Home() {
 
 
 
-git config --global user.email "faisalbahriii0808@gmail.com"
-git config --global user.name "HFaisalBahri"
