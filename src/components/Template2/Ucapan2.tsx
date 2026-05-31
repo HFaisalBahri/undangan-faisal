@@ -36,10 +36,12 @@ export default function Ucapan2() {
               placeholder="Masukkan Nama Anda"
             />
           </div>
+          {/* Ini adalah bagian form Konfirmasi Kehadiran yang sudah diperbaiki */}
           <div>
             <label className="block text-[11px] uppercase tracking-wider text-[#8c6d53] mb-1 font-semibold">Konfirmasi Kehadiran</label>
             <select
-              value={form.status}
+              aria-label="Konfirmasi Kehadiran" 
+              value={form.status} /* ⬅️ PERBAIKAN: Gunakan form.status */
               onChange={(e) => setForm({ ...form, status: e.target.value })}
               className="w-full bg-[#fbf7f0] border border-[#d4b295]/30 rounded-xl px-4 py-2.5 text-sm text-[#4a3525] focus:outline-none"
             >

@@ -3,11 +3,11 @@
 import Image from "next/image";
 
 export default function Galeri2() {
-  // Ini daftar nama file foto yang harus kamu siapkan di folder public/images/
+  // Daftar nama file foto dipertahankan sesuai permintaanmu
   const daftarFoto = [
-    { src: "/images/13.png"},
-    { src: "/images/14.JPG"},
-    { src: "/images/15.JPG"},
+    { src: "/images/13.png" },
+    { src: "/images/14.JPG" },
+    { src: "/images/15.JPG" },
     { src: "/images/17.JPG" },
   ];
 
@@ -30,10 +30,6 @@ export default function Galeri2() {
               fill
               className="object-cover hover:scale-105 transition-transform duration-500"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-[11px] text-[#8c6d53] font-serif italic p-2 bg-[#fbf7f0]/60 hover:opacity-0 transition-opacity text-center">
-              <span>{daftarFoto[0].label}</span>
-              
-            </div>
           </div>
 
           {/* Foto 2: Model Standar */}
@@ -44,9 +40,6 @@ export default function Galeri2() {
               fill
               className="object-cover hover:scale-105 transition-transform duration-500"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-[11px] text-[#8c6d53] font-serif italic p-2 bg-[#fbf7f0]/60 hover:opacity-0 transition-opacity text-center">
-              <span>{daftarFoto[1].label}</span>
-            </div>
           </div>
 
           {/* Foto 3: Model Standar */}
@@ -57,9 +50,6 @@ export default function Galeri2() {
               fill
               className="object-cover hover:scale-105 transition-transform duration-500"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-[11px] text-[#8c6d53] font-serif italic p-2 bg-[#fbf7f0]/60 hover:opacity-0 transition-opacity text-center">
-              <span>{daftarFoto[2].label}</span>
-            </div>
           </div>
 
           {/* Foto 4: Model Bingkai Melengkung ke Atas (Tinggi) */}
@@ -70,9 +60,6 @@ export default function Galeri2() {
               fill
               className="object-cover hover:scale-105 transition-transform duration-500"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-[11px] text-[#8c6d53] font-serif italic p-2 bg-[#fbf7f0]/60 hover:opacity-0 transition-opacity text-center">
-              <span>{daftarFoto[3].label}</span>
-            </div>
           </div>
 
         </div>
